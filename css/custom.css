@@ -9,16 +9,59 @@
     --cnvs-themecolor: #4f39f6;
     --cnvs-themecolor-rgb: 79, 57, 246;
     --cnvs-gradient-color: linear-gradient(to right, #c216cd, #439719);
-    --cnvs-header-bg: rgba(0,0,0,0);
+    --cnvs-header-bg: rgba(0, 0, 0, 0);
+
 }
 
 #slider {
-    background-image: linear-gradient(225deg, #7028e4 30%, #b893ef 100%);}
+    background-image: linear-gradient(225deg, #4f39f6 30%, #7f71ec 100%);
+}
 
 #header {
     position: absolute;
+    --cnvs-primary-menu-color: #fff;
+    --cnvs-primary-menu-submenu-top-border: 0px;
 }
 
-.menu-link {
-    color:#fff;
+#header.transparent-header:not(.sticky-header) .button {
+    color: #fff;
+    border-color: #fff;
+}
+
+#header.transparent-header:not(.sticky-header) .button:hover {
+    color: #000;
+    border-color: #fff;
+    background-color: rgb(250, 225, 129);
+
+}
+
+#header.button:hover {
+    color: #000;
+    background-color: rgb(250, 225, 129);
+}
+
+
+#slider {
+    --cnvs-heading-color: #fff;
+    color: #fff;
+}
+
+#header.sticky-header {
+    --cnvs-header-sticky-bg: #fff;
+    --cnvs-primary-menu-color: #000;
+}
+
+.logo-default {
+    object-fit: contain;
+    max-width: 170px !important;
+}
+
+.logo-sticky {
+    object-fit: contain;
+    max-width: 170px !important;
+}
+
+.button:hover {
+    background-color: rgb(250, 225, 129);
+    color: #000;
 }

@@ -122,7 +122,7 @@
 }
 .active .swiper-pagination-progress .swiper-pagination-bar-active {
 	animation-name: swiperbarAnim;
-	animation-duration: 5s;
+	animation-duration: 8s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: 1;
 	animation-direction: alternate;
