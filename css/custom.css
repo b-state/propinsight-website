@@ -65,3 +65,9 @@
     background-color: rgb(250, 225, 129);
     color: #000;
 }
+
+.badge {
+    background-color: var(--cnvs-themecolor) !important;
+    color: #fff !important;
+}
+
