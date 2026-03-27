@@ -71,3 +71,23 @@
     color: #fff !important;
 }
 
+/* Impressum page - opaque header */
+.page-static-header #header {
+    position: relative;
+    background-color: #fff;
+    --cnvs-primary-menu-color: #000;
+}
+
+.page-static-header #header .logo-default {
+    display: none !important;
+}
+
+.page-static-header #header .logo-sticky {
+    display: block !important;
+}
+
+.page-static-header #header.transparent-header:not(.sticky-header) .button {
+    color: #000;
+    border-color: #000;
+}
+

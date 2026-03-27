@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="author" content="Philipp Benner">
     <meta name="description"
-          content="Create SAAS &amp; AI Subscription Websites with Canvas Template. Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+          content="propinsight - Sondervergütungen für Immobilienverwalter schnell erfassen und versandfertige Rechnungen mit wenigen Klicks erstellen.">
 
     <!-- Font Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,9 @@
 
     <!-- Core Style -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/icons/favicon/favicon-96x96.png">
 
     <!-- Font Icons -->
     <link rel="stylesheet" href="css/font-icons.css">
@@ -42,80 +45,22 @@
 ============================================= -->
 <div id="wrapper">
 
-    <!-- Header
-    ============================================= -->
-    <header id="header" class="transparent-header">
-        <div id="header-wrap">
-            <div class="container">
-                <div class="header-row">
-
-                    <!-- Logo
-                    ============================================= -->
-                    <div id="logo" class="col-lg-2 me-lg-auto">
-                        <a href="index.html" class="w-auto">
-                            <img class="logo-default" src="demos/saas-2/images/logo.png" alt="propinsight Logo">
-                            <img class="logo-sticky" src="demos/saas-2/images/logo-dark.png" alt="propinsight Logo">
-                        </a>
-                    </div><!-- #logo end -->
-
-                    <div class="header-misc ms-auto col-lg-2 justify-content-lg-end">
-                        <a href="#" class="button button-border button-rounded rounded border-contrast-500 mx-0"
-                           style="--cnvs-btn-fontsize: 1.125rem"><i
-                                class="bi-person-fill d-none d-md-inline-block me-2 fs-6"></i>Login</a>
-                    </div>
-
-                    <div class="primary-menu-trigger">
-                        <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
-                            <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
-                        </button>
-                    </div>
-
-                    <!-- Primary Navigation
-                    ============================================= -->
-                    <nav class="primary-menu with-arrows">
-
-                        <ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250"
-                            data-offset="65">
-                            <li class="menu-item">
-                                <a href="#" class="menu-link" data-href="#section-services">
-                                    <div>Funktionen</div>
-                                </a>
-                            </li>
-
-                            <li class="menu-item">
-                                <a href="#" class="menu-link" data-href="#section-pricing">
-                                    <div>Preise</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-link" data-href="#section-faqs">
-                                    <div>FAQs</div>
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </nav><!-- #primary-menu end -->
-
-                </div>
-            </div>
-        </div>
-        <div class="header-wrap-clone"></div>
-    </header><!-- #header end -->
+    <!-- Header (Web Component) -->
+    <site-header></site-header>
 
     <!-- Slider
     ============================================= -->
     <div id="slider" class="slider-element min-vh-lg-100">
 
         <div class="container min-vh-100 d-flex align-items-center">
-            <div class="row justify-content-between pb-6 align-items-center align-items-xl-end">
+            <div class="row justify-content-between align-items-center">
 
                 <div class="col-lg-6 col-xxl-5 py-5 py-lg-6 my-lg-5 text-center text-lg-start">
                     <h1 class="display-4 fw-bolder ls-n-1">Schluss mit Gratis-Arbeit!</h1>
                     <p class="lead fw-normal mb-5">Als Immobilienverwalter schnell Sondervergütungen erfassen und
                         versandfertige Rechnungen mit wenigen Klicks erstellen.</p>
 
-                    <a href="#" class="button button-large px-lg-5 py-lg-3 rounded-pill m-0 mb-4"><i
+                    <a href="https://app.propinsight.de" class="button button-large px-lg-5 py-lg-3 rounded-pill m-0 mb-4"><i
                             class="fa-solid fa-stopwatch"></i>Jetzt loslegen</a>
                 </div>
 
@@ -146,16 +91,7 @@
                                                                                              src="demos/saas-2/images/clients/goetz-hausverwaltung.svg"
                                                                                              alt="Brands"></div>
                                 <div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46"
-                                                                                             src="demos/saas-2/images/clients/github.svg"
-                                                                                             alt="Brands"></div>
-                                <div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46"
-                                                                                             src="demos/saas-2/images/clients/google.svg"
-                                                                                             alt="Brands"></div>
-                                <div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46"
-                                                                                             src="demos/saas-2/images/clients/paypal.svg"
-                                                                                             alt="Brands"></div>
-                                <div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46"
-                                                                                             src="demos/saas-2/images/clients/vimeo.svg"
+                                                                                             src="demos/saas-2/images/clients/bauhoffer-frank-hausverwaltung.svg"
                                                                                              alt="Brands"></div>
                             </div>
                         </div>
@@ -261,12 +197,12 @@
                                          style="border-radius: 20px;">
                                         <div class="row">
                                             <div class="col-xl-7 col-md-8">
-                                                <span class="badge rounded-pill text-bg-light px-3 py-2 mb-2 fw-normal">Lückenlos</span>
+                                                <span class="badge rounded-pill text-bg-light px-3 py-2 mb-2 fw-normal">Minutengenau</span>
                                                 <h3 class="fs-2 mb-3 fw-bolder">Schnelles Erfassen von Tätigkeiten</h3>
                                                 <!-- <i class="fa-solid fa-coins"></i> -->
                                                 <p class="op-09 mb-5">Erfassen Sie das Objekt, die Stunden,
-                                                    Tätigkeitsbeschreibungen und Interna in Sekunden. Fahrtkosten werden
-                                                    automatisch berechnet.</p>
+                                                    Tätigkeit und Interna in Sekunden. Das alles Minutengenau und Fahrtkosten werden
+                                                    sogar automatisch berechnet.</p>
 
                                             </div>
                                         </div>
@@ -324,7 +260,7 @@
                                         </div>
                                         <h3 class="fs-2 mb-3 fw-bolder">Individuelle Stundensätze</h3>
                                         <!-- <i class="fa-solid fa-coins"></i> -->
-                                        <p class="op-09 mb-5">Jeder Mitarbeiter hat seinen eigenen Stundenssatz.
+                                        <p class="op-09 mb-5">Jeder Mitarbeiter hat seinen eigenen Stundenssatz, wenn gewünscht sogar pro Objekt.
                                             Somit gibt es am Ende weniger Diskussionen über unfaire Abrechnugen.</p>
 
                                         <svg viewBox="0 0 300 300" width="280" height="280"
@@ -361,7 +297,7 @@
                                             </div>
                                             <h3 class="fs-2 mb-3 fw-bolder">Analysen pro Objekt</h3>
                                             <!-- <i class="fa-solid fa-coins"></i> -->
-                                            <p class="op-09 mb-5">Sehen Sie, welche Objekte den meisten Umsatz bringen,
+                                            <p class="op-09 mb-5 w-75">Sehen Sie, welche Objekte den meisten Umsatz bringen,
                                                 welche Tätigkeiten am häufigsten anfallen und sie sich diese auf Ihre
                                                 Mitarbeiter verteilen.</p>
                                         </div>
@@ -482,27 +418,26 @@
 
                         <div class="col-xl-5 col-md-6">
                             <span class="badge px-3 py-2 mt-2 me-1 bg-white border border-default text-dark rounded-pill fw-normal position-absolute z-9"
-                                  style="left: 50px; top: -23px;">Nur für kurze Zeit!</span>
+                                  style="left: 50px; top: -23px;">Early Access Zugang</span>
                             <div class="pricing-box position-relative rounded-xxl p-5 h-100 d-flex flex-column bg-color bg-opacity-10">
                                 <div class="row align-items-center">
                                     <div class="col-lg-6">
                                         <h3 class="fw-bolder fs-1 ls-n-1 mb-1">Komplett</h3>
-                                        <p class="mb-0 small lh-base text-contrast-700">Unser Abo während der
-                                            Testphase</p>
+                                        <p class="mb-0 small lh-base text-contrast-700">Holen Sie sich, was Ihnen zusteht!</p>
                                     </div>
 
                                     <div class="col-lg-6">
                                         <div class="pricing-price fw-bolder text-lg-end pt-lg-0 pb-0">
-                                            <div class="pts-content pts-content-monthly">0€<span
+                                            <div class="pts-content pts-content-monthly">39€<span
                                                     class="d-block fs-6 fw-semibold op-05 mb-0 mt-2">pro Monat/Nutzer</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="pricing-features bg-transparent border-bottom-0 border-width-2 border-black mt-5 pt-5 pb-3">
-                                    <p class="lead fw-bold mb-3">Enthalten:</p>
+                                    <p class="lead fw-bold mb-3">Alle Funktionen enthalten:</p>
                                     <ul class="iconlist">
-                                        <li class="my-1"><i class="bi-patch-check-fill"></i> <span><strong>Sondervergütungen</strong> lückenlos erfassen</span></li>
+                                        <li class="my-1"><i class="bi-patch-check-fill"></i> <span><strong>Sondervergütungen</strong> minutengenau erfassen</span></li>
                                         <li class="my-1"><i class="bi-patch-check-fill"></i> <span><strong>Profi-Rechnungen</strong> per Klick erstellen</span></li>
                                         <li class="my-1"><i class="bi-patch-check-fill"></i> <span><strong>Projekte</strong> für spezielle Zuordnung</span></li>
                                         <li class="my-1"><i class="bi-patch-check-fill"></i> <span><strong>Umsatz-Analysen</strong> in Echtzeit abrufen</span></li>
@@ -511,9 +446,9 @@
                                     </ul>
                                 </div>
                                 <div class="pricing-action p-0 mt-auto">
-                                    <a href="www.propinsight.de"
-                                       class="button fw-semibold w-100 py-3 px-4 d-flex justify-content-between rounded-pill mx-0">Jetzt
-                                        anmelden <i class="bi-arrow-right"></i></a>
+                                    <a href="https://app.propinsight.de"
+                                       class="button fw-semibold w-100 py-3 px-4 d-flex justify-content-between rounded-pill mx-0">Kostenlos
+                                        14 Tage testen <i class="bi-arrow-right"></i></a>
                                 </div>
                                 <img src="demos/saas-2/images/svg/pricing-bg.svg" alt="..." class="pricing-bg">
                             </div>
@@ -668,7 +603,7 @@
                                     </div>
                                 </div>
                                 <div class="toggle-content">
-                                    Transparenz schafft Akzeptanz. Da die Leistungen detailliert aufgeführt sind (statt
+                                    Transparenz schafft Akzeptanz. Da die Leistungen detailliert und minutengenau aufgeführt sind (statt
                                     pauschaler Summen), gibt es deutlich weniger Rückfragen oder Diskussionen.
                                 </div>
                             </div>
@@ -684,8 +619,8 @@
                                     </div>
                                 </div>
                                 <div class="toggle-content">
-                                    Nein, propinsight versteht sich als Erweiterung, das Ihre bestehende Software
-                                    ergänzt, um die Lücke bei Sondervergütungen zu schließen.
+                                    Nein, propinsight versteht sich als Erweiterung, die Ihre bestehende Software
+                                    ergänzt, um Sondervergütungen schnell abzurechnen.
                                 </div>
                             </div>
 
@@ -828,109 +763,8 @@
         </div>
     </section><!-- #content end -->
 
-    <!-- Footer
-    ============================================= -->
-    <footer id="footer" class="bg-white border-0">
-        <div class="container">
-
-            <!-- Footer Widgets
-            ============================================= -->
-            <div class="footer-widgets-wrap">
-                <div class="row gx-4 gy-5">
-
-                    <div class="col-lg-3 col-6">
-
-                        <div class="widget widget_links widget-li-noicon">
-
-                            <h4 class="fw-bolder text-contrast-1000 text-smaller text-uppercase mb-4">Das Produkt</h4>
-
-                            <ul>
-                                <li><a href="#">Dokumentation</a></li>
-                                <li><a href="#">Feedback</a></li>
-                                <!--                                <li><a href="#">Plugins</a></li>-->
-                                <!--                                <li><a href="#">Support Forums</a></li>-->
-                                <!--                                <li><a href="#">Themes</a></li>-->
-                                <!--                                <li><a href="#">Canvas Blog</a></li>-->
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-3 col-6">
-
-                        <div class="widget widget_links widget-li-noicon">
-
-                            <h4 class="fw-bolder text-contrast-1000 text-smaller text-uppercase mb-4">Formalien</h4>
-
-                            <ul>
-                                <li><a href="/impressum.html">Impressum</a></li>
-                                <li><a href="/">Datenschutz</a></li>
-                                <li><a href="#">AGB</a></li>
-                                <li><a href="#">AVV</a></li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                    <!--                    <div class="col-lg-3 col-6">-->
-
-                    <!--                        <div class="widget widget_links widget-li-noicon">-->
-
-                    <!--                            <h4 class="fw-bolder text-contrast-1000 text-smaller text-uppercase mb-4">How we do</h4>-->
-
-                    <!--                            <ul>-->
-                    <!--                                <li><a href="#">Plugins</a></li>-->
-                    <!--                                <li><a href="#">Support Forums</a></li>-->
-                    <!--                                <li><a href="#">Themes</a></li>-->
-                    <!--                                <li><a href="#">Canvas Blog</a></li>-->
-                    <!--                                <li><a href="#">Contact Us</a></li>-->
-                    <!--                            </ul>-->
-
-                    <!--                        </div>-->
-
-                    <!--                    </div>-->
-
-                    <div class="col-lg-3 col-6">
-
-                        <div class="widget">
-
-                            <h4 class="fw-bolder text-contrast-1000 text-smaller text-uppercase mb-4">Kontakt</h4>
-
-                            <ul class="list-unstyled">
-                                <li class="mb-3"><a class="text-dark" href="#"><i
-                                        class="me-3 color bi-telephone-fill"></i>+0 (11) 222 333</a></li>
-                                <li class="mb-3"><a class="text-dark" href="#"><i
-                                        class="me-3 color bi-envelope-fill"></i>no-reply@canvas.com</a></li>
-                                <li class="mb-3"><i class="me-3 color bi-calendar-week-fill"></i>Mon - Sat | 09:00 -
-                                    16:00
-                                </li>
-                                <li><i class="me-3 color bi-calendar-x-fill"></i>Sunday Closed</li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div><!-- .footer-widgets-wrap end -->
-        </div>
-
-        <!-- Copyrights
-        ============================================= -->
-        <!--        <div id="copyrights" class="bg-transparent border-top op-08">-->
-        <!--            <div class="container text-center">-->
-
-        <!--                Copyrights &copy; 2023 All Rights Reserved by SemiColonWeb-->
-        <!--                <div class="copyright-links"><a-->
-        <!--                        href="https://1.envato.market/c/1309643/480739/4415?u=http%3A%2F%2Fthemeforest.net%2Fuser%2Fsemicolonweb%2Fportfolio"-->
-        <!--                        target="_blank">Portfolio</a> / <a href="http://support.semicolonweb.com" target="_blank">Support</a>-->
-        <!--                </div>-->
-
-        <!--            </div>-->
-        <!--        </div>-->
-    </footer><!-- #footer end -->
+    <!-- Footer (Web Component) -->
+    <site-footer></site-footer>
 
 </div><!-- #wrapper end -->
 
@@ -940,6 +774,7 @@
 
 <!-- JavaScripts
 ============================================= -->
+<script src="js/components.js"></script>
 <script src="js/plugins.min.js"></script>
 <script src="js/functions.bundle.js"></script>
 
