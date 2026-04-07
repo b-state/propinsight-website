@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="de">
 <head>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="fa385daa-f7ee-496d-bc0f-8143b6792185"></script>
-    <script src="https://t.contentsquare.net/uxa/c9866dbbca8f5.js"></script>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
@@ -341,68 +339,9 @@
 <script src="js/components.js"></script>
 <script src="js/plugins.min.js"></script>
 <script src="js/functions.bundle.js"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="fa385daa-f7ee-496d-bc0f-8143b6792185"></script>
+<script src="https://t.contentsquare.net/uxa/c9866dbbca8f5.js"></script>
 
-<script>
-    window.addEventListener('load', function () {
-        var swiperParent = new Swiper('.swiper-testimonial', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            navigation: {
-                prevEl: '.slider-arrow-left',
-                nextEl: '.slider-arrow-right'
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                1: {
-                    slidesPerView: 1
-                },
-                576: {
-                    slidesPerView: 1
-                },
-                768: {
-                    slidesPerView: 2
-                },
-                1200: {
-                    slidesPerView: 3
-                }
-            }
-        });
-
-        var SwiperTabsContainer = new Swiper('.swiper-tab-container', {
-            loop: true,
-            slidesPerView: 1,
-            autoHeight: true,
-            autoplay: {
-                delay: 8000,
-                disableOnInteraction: false,
-                autoplayDisableOnInteraction: false
-            },
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: true
-            },
-            longSwipes: true,
-            autoplayDisableOnInteraction: true,
-            on: {
-                activeIndexChange: function (swiper) {
-                    var index = swiper.realIndex;
-                    jQuery('.swiper-tab-link').removeClass('active');
-                    jQuery('.swiper-tab-link').eq(index).addClass('active');
-                }
-            }
-        });
-
-        jQuery('.swiper-tab-link').on('click', function () {
-            var index = jQuery(this).index();
-            SwiperTabsContainer.slideToLoop(index);
-            jQuery('.swiper-tab-link').removeClass('active');
-            jQuery(this).addClass('active');
-        });
-    });
-</script>
 
 </body>
 </html>
