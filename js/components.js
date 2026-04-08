@@ -108,6 +108,7 @@ class SiteFooter extends HTMLElement {
                             <ul>
                                 <li><a href="/impressum.html">Impressum</a></li>
                                 <li><a href="/datenschutz.html">Datenschutz</a></li>
+                                <li><a href="/cookie-policy.html">Cookie-Policy</a></li>
 <!--                                <li><a href="#">AGB</a></li>-->
                             </ul>
 
