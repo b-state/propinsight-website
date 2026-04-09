@@ -22,8 +22,8 @@ class SiteHeader extends HTMLElement {
                     <!-- Logo -->
                     <div id="logo" class="col-lg-2 me-lg-auto">
                         <a href="index.html" class="w-auto">
-                            <img class="logo-default" src="demos/saas-2/images/logo.png" alt="propinsight Logo">
-                            <img class="logo-sticky" src="demos/saas-2/images/logo-dark.png" alt="propinsight Logo">
+                            <img class="logo-default" src="demos/saas-2/images/logo.webp" alt="propinsight Logo">
+                            <img class="logo-sticky" src="demos/saas-2/images/logo-dark.webp" alt="propinsight Logo">
                         </a>
                     </div>
 
