@@ -10,7 +10,6 @@
     --cnvs-themecolor-rgb: 79, 57, 246;
     --cnvs-gradient-color: linear-gradient(to right, #c216cd, #439719);
     --cnvs-header-bg: rgba(0, 0, 0, 0);
-
 }
 
 /* --- DM SANS (als Variable Font) --- */
@@ -30,6 +29,11 @@
     position: absolute;
     --cnvs-primary-menu-color: #fff;
     --cnvs-primary-menu-submenu-top-border: 0px;
+    width: 100%;
+}
+
+#header-wrap {
+    border-bottom: 0;
 }
 
 #header.transparent-header:not(.sticky-header) .button {
@@ -50,14 +54,56 @@
 }
 
 
-#slider {
-    --cnvs-heading-color: #fff;
-    color: #fff;
+.cnvs-hamburger-box span {
+    background-color: #fff!important;
 }
+.cnvs-hamburger-box span:before {
+    background-color: #fff!important;
+}
+.cnvs-hamburger-box span:after {
+    background-color: #fff!important;
+}
+
+.primary-menu {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu-link {
+    color: #000;
+    text-align: center;
+
+}
+
+.device-up-lg #header.sticky-header .menu-link {
+    color: #000;
+    text-align: center;
+}
+
+.device-up-lg .primary-menu {
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+}
+
+.device-up-lg .menu-link {
+    color: #fff;
+    text-align: center;
+}
+
+
+
 
 #header.sticky-header {
     --cnvs-header-sticky-bg: #fff;
     --cnvs-primary-menu-color: #000;
+}
+
+.device-up-lg .header-misc {
+    display: block;
+}
+
+.header-misc {
+    display: none;
 }
 
 .logo-default {
@@ -73,6 +119,15 @@
 .button:hover {
     background-color: rgb(250, 225, 129);
     color: #000;
+}
+
+#slider {
+    --cnvs-heading-color: #fff;
+    color: #fff;
+}
+
+.device-down-lg #hero-text {
+margin-top: 30px;
 }
 
 .badge {

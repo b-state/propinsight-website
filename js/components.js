@@ -5,10 +5,11 @@ class SiteHeader extends HTMLElement {
     connectedCallback() {
         // Check if we're on the homepage for smooth scrolling behavior
         const isHomepage = window.location.pathname === '/' ||
-                          window.location.pathname === '/index.html' ||
-                          window.location.pathname.endsWith('/index.html');
+            window.location.pathname === '/index.html' ||
+            window.location.pathname.endsWith('/index.html');
 
         // On homepage: use data-href for smooth scroll, on other pages: use direct links
+        const loginLink = isHomepage ? 'href="#" class="menu-link" data-href="#section-services"' : 'href="https://app.propinsight.de" class="menu-link"';
         const funktionenLink = isHomepage ? 'href="#" class="menu-link" data-href="#section-services"' : 'href="index.html#section-services" class="menu-link"';
         const preiseLink = isHomepage ? 'href="#" class="menu-link" data-href="#section-pricing"' : 'href="index.html#section-pricing" class="menu-link"';
         const faqsLink = isHomepage ? 'href="#" class="menu-link" data-href="#section-faqs"' : 'href="index.html#section-faqs" class="menu-link"';
@@ -44,6 +45,10 @@ class SiteHeader extends HTMLElement {
 
                         <ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250"
                             data-offset="65">
+                            <li class="menu-item">
+ <a ${loginLink}>                                    <div>Login</div>
+                                </a>
+                            </li>
                             <li class="menu-item">
                                 <a ${funktionenLink}>
                                     <div>Funktionen</div>
