@@ -155,3 +155,32 @@ margin-top: 30px;
     border-color: #000;
 }
 
+/* Prevent flash of mobile menu on desktop before JS initializes is-expanded-menu/device-up-lg */
+@media (min-width: 992px) {
+    .primary-menu-trigger {
+        display: none !important;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .menu-container:not(.mobile-primary-menu) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .header-misc {
+        display: block;
+    }
+
+    .primary-menu {
+        flex: 0 0 auto;
+        flex-grow: 0;
+        background-color: transparent !important;
+    }
+
+    .menu-link {
+        color: #fff;
+    }
+}
+
