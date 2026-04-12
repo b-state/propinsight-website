@@ -28,8 +28,14 @@
 #header {
     position: absolute;
     --cnvs-primary-menu-color: #fff;
+    --cnvs-primary-menu-hover-color: #000;
     --cnvs-primary-menu-submenu-top-border: 0px;
     width: 100%;
+}
+
+.device-up-lg .menu-link:hover,
+.device-up-lg .menu-item:hover > .menu-link {
+    color: #000 !important;
 }
 
 #header-wrap {
@@ -42,14 +48,14 @@
 }
 
 #header.transparent-header:not(.sticky-header) .button:hover {
-    color: #000;
+    color: #000!important;
     border-color: #fff;
     background-color: rgb(250, 225, 129);
 
 }
 
 #header.button:hover {
-    color: #000;
+    color: #000!important;
     background-color: rgb(250, 225, 129);
 }
 
@@ -72,11 +78,10 @@
 .menu-link {
     color: #000;
     text-align: center;
-
 }
 
 .device-up-lg #header.sticky-header .menu-link {
-    color: #000;
+    color: #000!important;
     text-align: center;
 }
 
@@ -171,6 +176,7 @@ margin-top: 30px;
 
     .header-misc {
         display: block;
+        order: 6;
     }
 
     .primary-menu {
@@ -181,6 +187,10 @@ margin-top: 30px;
 
     .menu-link {
         color: #fff;
+    }
+
+    .menu-item:not(:first-child) {
+        border-top: 0;
     }
 }
 

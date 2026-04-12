@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="author" content="Philipp Benner">
     <meta name="description"
-          content="propinsight - Sondervergütungen für Immobilienverwalter schnell erfassen und versandfertige E-Rechnungen mit wenigen Klicks erstellen.">
+          content="propinsight - Sondervergütungen, Analysen und E-Rechnungen für Immobilienverwalter">
 
     <!-- Core Style -->
     <link rel="stylesheet" href="style.css">
@@ -29,7 +29,46 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>propinsight</title>
+    <title>propinsight – Sondervergütungen, Analysen und E-Rechnungen für Immobilienverwalter</title>
+
+    <!-- Canonical
+    ============================================= -->
+    <link rel="canonical" href="https://propinsight.de/">
+
+    <!-- Open Graph
+    ============================================= -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://propinsight.de/">
+    <meta property="og:title" content="propinsight – Sondervergütungen, Analysen und E-Rechnungen für Immobilienverwalter">
+    <meta property="og:description" content="Sondervergütungen, Analysen und E-Rechnungen für Immobilienverwalter">
+    <meta property="og:image" content="https://propinsight.de/images/linkedin-card.webp">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="propinsight">
+
+    <!-- Structured Data
+    ============================================= -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "propinsight",
+      "url": "https://propinsight.de/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Sondervergütungen, Analysen und E-Rechnungen für Immobilienverwalter",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "0",
+        "description": "14 Tage kostenlos testen"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "propinsight",
+        "url": "https://propinsight.de/"
+      }
+    }
+    </script>
 
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="86c30175-0416-4f11-9e39-5a7784f78e6f" data-blockingmode="auto" type="text/javascript"></script>
     <script src="https://t.contentsquare.net/uxa/c9866dbbca8f5.js"></script>
@@ -45,8 +84,52 @@
 ============================================= -->
 <div id="wrapper">
 
-    <!-- Header (Web Component) -->
-    <site-header></site-header>
+    <!-- Header -->
+    <header id="header" class="transparent-header">
+        <div id="header-wrap">
+            <div class="container">
+                <div class="header-row">
+
+                    <!-- Logo -->
+                    <div id="logo" class="col-lg-2 me-lg-auto">
+                        <a href="index.html" class="w-auto">
+                            <img class="logo-default" src="demos/saas-2/images/logo.webp" alt="propinsight Logo">
+                            <img class="logo-sticky" src="demos/saas-2/images/logo-dark.webp" alt="propinsight Logo">
+                        </a>
+                    </div>
+
+                    <div class="header-misc ms-auto col-lg-2 justify-content-lg-end">
+                        <a href="https://app.propinsight.de" class="button button-border button-rounded rounded border-contrast-500 mx-0"
+                           style="--cnvs-btn-fontsize: 1.125rem"><i
+                                class="bi-person-fill d-none d-md-inline-block me-2 fs-6"></i>Login</a>
+                    </div>
+
+                    <div class="primary-menu-trigger">
+                        <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+                            <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+                        </button>
+                    </div>
+
+                    <!-- Primary Navigation -->
+                    <nav class="primary-menu with-arrows">
+                        <ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link" data-href="#section-services"><div>Funktionen</div></a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link" data-href="#section-pricing"><div>Preise</div></a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link" data-href="#section-faqs"><div>FAQs</div></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+    </header>
 
     <!-- Slider
     ============================================= -->
@@ -66,7 +149,7 @@
                 </div>
 
                 <div class="col-lg-6 col-xxl-7">
-                    <img src="demos/saas-2/images/hero.webp" alt="..">
+                    <img src="demos/saas-2/images/hero.webp" alt="propinsight App – Sondervergütungen erfassen und E-Rechnungen erstellen">
                 </div>
 
             </div>
@@ -90,13 +173,13 @@
                             <div class="row g-4 align-items-center justify-content-center">
                                 <div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46"
                                                                                              src="demos/saas-2/images/clients/goetz-hausverwaltung.svg"
-                                                                                             alt="Brands"></div>
+                                                                                             alt="Götz Hausverwaltung Logo"></div>
                                 <div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46"
                                                                                              src="demos/saas-2/images/clients/bauhoffer-frank-hausverwaltung.svg"
-                                                                                             alt="Brands"></div>
+                                                                                             alt="Bauhoffer Frank Hausverwaltung Logo"></div>
                                 <div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46"
                                                                                              src="demos/saas-2/images/clients/schwaben-projekt.svg"
-                                                                                             alt="Brands"></div>
+                                                                                             alt="Schwaben Projekt Logo"></div>
                             </div>
                         </div>
                     </div>
@@ -165,15 +248,15 @@
                                 <div class="swiper swiper-tab-container">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="demos/saas-2/images/new/tabs/erfassen.webp" alt=".."
+                                            <img src="demos/saas-2/images/new/tabs/erfassen.webp" alt="Sondervergütungen minutengenau erfassen – propinsight Screenshot"
                                                  class="w-100 rounded-xxl">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="demos/saas-2/images/new/tabs/rechnung.webp" alt=".."
+                                            <img src="demos/saas-2/images/new/tabs/rechnung.webp" alt="E-Rechnung erstellen – propinsight Screenshot"
                                                  class="w-100 rounded-xxl bg-success bg-opacity-10">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="demos/saas-2/images/new/tabs/analysen.webp" alt=".."
+                                            <img src="demos/saas-2/images/new/tabs/analysen.webp" alt="Tätigkeiten und Umsatz auswerten – propinsight Screenshot"
                                                  class="w-100 rounded-xxl">
                                         </div>
                                     </div>
@@ -323,7 +406,7 @@
                                 <div class="col-xl-7">
                                     <div class="d-flex position-relative h-100 min-vh-50 overflow-hidden"
                                          style="border-radius: 20px;">
-                                        <img src="demos/saas-2/images/man-and-woman-talking.webp" alt="..."
+                                        <img src="demos/saas-2/images/man-and-woman-talking.webp" alt="Immobilienverwalter-Team bei der gemeinsamen Arbeit"
                                              class="object-cover w-100 h-100 position-absolute">
                                         <div class="position-relative z-1 mt-5 ms-5">
                                             <span class="badge rounded-pill text-bg-warning px-3 py-2 mb-2 fw-normal">Für Teams gemacht</span>
@@ -350,7 +433,7 @@
                                                     <!--                                                        More</a>-->
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <img src="demos/saas-2/images/svg/group.svg" alt="Image">
+                                                    <img src="demos/saas-2/images/svg/group.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="line border-black border-width-2"></div>
@@ -463,7 +546,7 @@
                                            class="button fw-semibold w-100 py-3 px-4 d-flex justify-content-between rounded-pill mx-0">Kostenlos
                                             14 Tage testen <i class="bi-arrow-right"></i></a>
                                     </div>
-                                    <img src="demos/saas-2/images/svg/pricing-bg.svg" alt="..." class="pricing-bg">
+                                    <img src="demos/saas-2/images/svg/pricing-bg.svg" alt="Preise Icon" class="pricing-bg">
 
                             </div>
 
@@ -537,7 +620,7 @@
                         <div class="w-100"></div>
 
                         <div class="col-lg-9">
-                            <img src="demos/saas-2/images/new/screen.webp" alt="..." class="mt-5"
+                            <img src="demos/saas-2/images/new/screen.webp" alt="propinsight Demo – E-Rechnung in wenigen Klicks erstellen" class="mt-5"
                                  style="transform: translate3d(0,calc(150px * var(--cnvs-scroll-end)),0); transition:transform .1s linear;">
                         </div>
                     </div>
@@ -551,7 +634,7 @@
                             <h3 class="display-3 ls-n-3 fw-bolder mb-3">
                                 Häufig gestellte Fragen</h3>
 
-                            <img src="demos/saas-2/images/svg/faqs.svg" alt="...">
+                            <img src="demos/saas-2/images/svg/faqs.svg" alt="">
                         </div>
                         <div class="col-lg-6 bg-contrast-0 p-5 rounded-xxl">
                             <div class="toggle">

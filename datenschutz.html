@@ -51,8 +51,52 @@
 ============================================= -->
 <div id="wrapper">
 
-    <!-- Header (Web Component) -->
-    <site-header></site-header>
+    <!-- Header -->
+    <header id="header" class="transparent-header">
+        <div id="header-wrap">
+            <div class="container">
+                <div class="header-row">
+
+                    <!-- Logo -->
+                    <div id="logo" class="col-lg-2 me-lg-auto">
+                        <a href="index.html" class="w-auto">
+                            <img class="logo-default" src="demos/saas-2/images/logo.webp" alt="propinsight Logo">
+                            <img class="logo-sticky" src="demos/saas-2/images/logo-dark.webp" alt="propinsight Logo">
+                        </a>
+                    </div>
+
+                    <div class="header-misc ms-auto col-lg-2 justify-content-lg-end">
+                        <a href="https://app.propinsight.de" class="button button-border button-rounded rounded border-contrast-500 mx-0"
+                           style="--cnvs-btn-fontsize: 1.125rem"><i
+                                class="bi-person-fill d-none d-md-inline-block me-2 fs-6"></i>Login</a>
+                    </div>
+
+                    <div class="primary-menu-trigger">
+                        <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+                            <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+                        </button>
+                    </div>
+
+                    <!-- Primary Navigation -->
+                    <nav class="primary-menu with-arrows">
+                        <ul class="menu-container">
+                            <li class="menu-item">
+                                <a href="index.html#section-services" class="menu-link"><div>Funktionen</div></a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html#section-pricing" class="menu-link"><div>Preise</div></a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html#section-faqs" class="menu-link"><div>FAQs</div></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+    </header>
 
     <!-- Slider
     ============================================= -->
