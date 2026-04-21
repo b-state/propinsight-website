@@ -194,3 +194,11 @@ margin-top: 30px;
     }
 }
 
+@media (min-width: 992px) {
+    #pricing-switch {
+        width: 50%;
+        flex-shrink: 0;
+        padding-left: 3rem;
+    }
+}
+
