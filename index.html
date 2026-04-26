@@ -608,11 +608,11 @@
 
             <div class="clear"></div>
 
-            <div class="section pb-0 scroll-detect" style="background-color: #DBF2FF;">
+            <div class="section pb-0 scroll-detect text-white" style="background-color: #4F39F6;">
                 <div class="container">
                     <div class="row justify-content-center g-4">
                         <div class="col-lg-6">
-                            <h3 class="display-5 ls-n-2 fw-bolder mb-0">Schauen Sie sich unsere Demo an!</h3>
+                            <h3 class="display-5 ls-n-2 fw-bolder mb-0 text-white">Schauen Sie sich unsere Demo an!</h3>
                         </div>
                         <div class="col-lg-6">
                             <p class="lead  ">Machen Sie sich selbst ein Bild von propinsight. In diesem kurzen
@@ -624,9 +624,15 @@
                         <div class="w-100"></div>
 
                         <div class="col-lg-9">
-                            <img src="demos/saas-2/images/new/screen.webp" alt="propinsight Demo – E-Rechnung in wenigen Klicks erstellen" class="mt-5"
-                                 style="transform: translate3d(0,calc(150px * var(--cnvs-scroll-end)),0); transition:transform .1s linear;">
-                        </div>
+                            <video
+                                    controls
+                                    preload="none"
+                                    poster="/static/demo-thumbnail.webp"
+                                    style="width: 100%; cursor: pointer"
+                                    onclick="this.paused ? this.play() : this.pause()"
+                            >
+                                <source src="/static/propinsight_demo.mp4" type="video/mp4" />
+                            </video></div>
                     </div>
                 </div>
             </div>
